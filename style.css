@@ -1,0 +1,235 @@
+body{
+  overflow-x: hidden;
+}
+*{
+    margin: auto;
+}
+.main{
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+  url(bg1.jpg) ;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center;
+}
+.well{
+    color: white;
+    font-size: 70px;
+    font-size: 5em;
+}
+.well2{
+    color: beige;
+    font-size: 3em;
+}
+.about{
+    height: 100vh;
+    background-color:black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+.aboutme{
+    color: white;
+    font-size: 5vw;
+    width: fit-content;
+    margin-top: 50px;
+}
+.me{
+    background: -webkit-linear-gradient(red, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aboutme2{
+    color: white;
+    font-size: 3vw;
+    width: fit-content;
+    margin-top:-190px;
+    flex: 1;
+}
+.img{
+height: fit-content;
+width: fit-content;
+margin-right: -15%;
+margin-top: -20px;
+max-width: 100%;
+}
+.work{
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(bg3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.check{
+  color: white;
+  text-align: center;
+  font-size: 4em;
+} 
+.mywork{
+  background: -webkit-linear-gradient(red, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ .bt{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+  margin-left: -10px; 
+}
+.xyz{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+  margin-left: -10px; 
+}
+.burn{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: -350px; 
+}
+.contact{
+  height: 500px;
+  width: 100%;
+  background: url(bg9.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ }   
+.email{
+  background-color: red;
+  height: 60px;
+  width: 10%;
+  margin-top: 300px;
+  margin-left: 20%;
+  transition: all ease-in 0.2s;
+} 
+.whatsapp{
+  background-color: red;
+  height: 60px;
+  width: 10%;
+  margin-top: -68.5px;
+  margin-left: 70%;
+  transition: all ease-in 0.2s;
+}
+.whatsapp:hover{
+  scale: 1.1;
+}
+.email:hover{
+  scale: 1.1;
+} 
+/* For tablets and smaller desktops (width ≤ 1024px) */
+@media (max-width: 1024px) {
+  .well {
+    font-size: 4em;
+  }
+
+  .well2 {
+    font-size: 2.5em;
+  }
+
+  .aboutme {
+    font-size: 6vw;
+  }
+
+  .aboutme2 {
+    font-size: 4vw;
+    margin-top: -100px;
+  }
+  
+  .img {
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+/* .view{
+  background-color: red;
+  height: 40px;
+  width: 10%;
+  padding: 1em;
+  transition: all ease-in-out 0.2s;
+}
+.a{
+  text-decoration: none;
+}
+.viewimg{
+  height: fit-content;
+  width: fit-content;
+  margin-top: -50px;
+  margin-right: -16px;
+}
+.view:hover{
+  scale: 1.2;
+} */
+/* For mobile screens (width ≤ 768px) */
+@media (max-width: 768px) {
+
+  .main {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .well {
+    font-size: 3em;
+  }
+
+  .well2 {
+    font-size: 1.8em;
+  }
+
+  .about {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .aboutme {
+    font-size: 7vw;
+  }
+
+  .aboutme2 {
+    font-size: 4.5vw;
+    margin-top: 20px;
+  }
+
+  .img {
+    margin: 0 auto 20px auto;
+    width: 150px;
+    height: auto;
+  }
+}
+
+/* For small phones (width ≤ 480px) */
+@media (max-width: 480px) {
+  .well {
+    font-size: 2.2em;
+  }
+
+  .well2 {
+    font-size: 1.4em;
+  }
+
+  .aboutme {
+    font-size: 8vw;
+  }
+
+  .aboutme2 {
+    font-size: 5vw;
+  }
+
+  .img {
+    width: 120px;
+  }
+}
