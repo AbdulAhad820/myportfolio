@@ -5,20 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdul Ahad Portfolio</title>
     <style>
-        /* Reset and base styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             overflow-x: hidden;
             font-family: Arial, sans-serif;
             line-height: 1.6;
         }
-
-        /* Main section */
         .main {
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(bg1.jpg);
             background-size: cover;
@@ -32,19 +28,15 @@
             text-align: center;
             padding: 20px;
         }
-
         .well {
             color: white;
             font-size: clamp(2.5rem, 5vw, 5rem);
             margin-bottom: 20px;
         }
-
         .well2 {
             color: beige;
             font-size: clamp(1.5rem, 3vw, 3rem);
         }
-
-        /* About section */
         .about {
             background-color: black;
             width: 100%;
@@ -54,7 +46,6 @@
             justify-content: center;
             padding: 60px 20px;
         }
-
         .aboutme {
             color: white;
             font-size: clamp(2rem, 5vw, 4rem);
@@ -62,13 +53,11 @@
             width: 100%;
             margin-bottom: 30px;
         }
-
         .me {
             background: -webkit-linear-gradient(red, #333);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .about-content {
             display: flex;
             flex-wrap: wrap;
@@ -77,20 +66,16 @@
             max-width: 1200px;
             gap: 60px;
         }
-
         .img {
             flex: 0 0 auto;
         }
-
         .img img {
             width: 100%;
             max-width: 400px;
             height: auto;
             border-radius: 10px;
-            /* Changed to contain to show full image */
             object-fit: contain;
         }
-
         .aboutme2 {
             color: white;
             font-size: clamp(1rem, 3vw, 1.5rem);
@@ -98,8 +83,6 @@
             min-width: 300px;
             text-align: left;
         }
-
-        /* Work section */
         .work {
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bg3.jpg);
             background-size: cover;
@@ -112,20 +95,17 @@
             justify-content: center;
             align-items: center;
         }
-
         .check {
             color: white;
             text-align: center;
             font-size: clamp(2rem, 4vw, 4rem);
             margin-bottom: 40px;
         }
-
         .mywork {
             background: -webkit-linear-gradient(red, #333);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .work-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -133,7 +113,6 @@
             width: 100%;
             max-width: 1400px;
         }
-
         .work-item {
             overflow: hidden;
             border-radius: 10px;
@@ -146,20 +125,15 @@
             padding: 20px;
             min-height: 400px;
         }
-
         .work-item:hover {
             transform: translateY(-5px);
         }
-
         .work-item img {
             width: 100%;
             max-height: 350px;
-            /* Changed to contain to show full image */
             object-fit: contain;
             display: block;
         }
-
-        /* Contact section */
         .contact {
             padding: 60px 20px;
             width: 100%;
@@ -169,19 +143,16 @@
             background-repeat: no-repeat;
             text-align: center;
         }
-
         .contact-title {
             color: white;
             font-size: clamp(2rem, 5vw, 3.5rem);
             margin-bottom: 40px;
         }
-
         .contact-gradient {
             background: -webkit-linear-gradient(red, #333);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .contact-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -189,7 +160,6 @@
             gap: 30px;
             margin-top: 30px;
         }
-
         .contact-button {
             display: inline-block;
             background-color: red;
@@ -201,73 +171,58 @@
             transition: all 0.3s ease;
             min-width: 180px;
         }
-
         .contact-button:hover {
             transform: scale(1.05);
             box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
         }
 
-        /* Media queries for specific adjustments */
         @media (max-width: 1024px) {
             .work-gallery {
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            }
-            
+            }            
             .work-item {
                 min-height: 350px;
             }
-            
             .work-item img {
                 max-height: 300px;
             }
         }
-
         @media (max-width: 768px) {
             .about-content {
                 flex-direction: column;
-            }
-            
+            }   
             .aboutme2 {
                 text-align: center;
             }
-            
             .work-gallery {
                 grid-template-columns: 1fr;
             }
-            
             .contact-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-            
             .img img {
                 max-width: 300px;
             }
         }
-
         @media (max-width: 480px) {
             .main {
                 height: 80vh;
-            }
-            
+            }   
             .about, .work, .contact {
                 padding: 40px 15px;
             }
-            
             .contact-button {
                 width: 100%;
                 max-width: 250px;
             }
-            
             .work-item {
                 min-height: 300px;
                 padding: 15px;
             }
-            
             .work-item img {
                 max-height: 250px;
             }
-            
             .img img {
                 max-width: 250px;
             }
@@ -287,11 +242,10 @@
                 <img src="float.png" alt="Abdul Ahad">
             </div>
             <div class="aboutme2">
-                Hey! I'm Abdul Ahad, a web developer from Pakistan I enjoy crafting websites that look clean and work smoothly. I focus on user-friendly responsive designs that help businesses stand out online. Whether it's a portfolio, a landing page, or a full multi-page site, I build with purpose and a touch of personality.
+                Hey! I'm Abdul Ahad, a web developer I enjoy crafting websites that look clean and work smoothly. I focus on user-friendly responsive designs that help businesses stand out online. Whether it's a portfolio, a landing page, or a full multi-page site, I build with purpose and a touch of personality.
             </div>
         </div>
     </div>
-    
     <div class="work">
         <h2 class="check">Check out some of my <span class="mywork">work</span></h2>
         <div class="work-gallery">
@@ -312,7 +266,6 @@
             </div>
         </div>
     </div>
-    
     <div class="contact">
         <h2 class="contact-title">Let's Work <span class="contact-gradient">Together</span></h2>
         <div class="contact-buttons">
